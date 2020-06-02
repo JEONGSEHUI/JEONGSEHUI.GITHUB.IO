@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC용 레이아웃</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; }
+        li { list-style: none; }
+        a { text-decoration: none; }
+        body{
+            font-family: 'Roboto Mono', monospace;
+        }
+        #wrapper{
+            width: 95%;
+            margin: 0 auto;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+    <style>
+        /* 헤더스타일 */
+        header>nav>ul{font-size: 0;}
+        header>nav>ul>li{
+            display: inline-block;
+        }
+        header>nav>ul>li{
+            font-size: 12pt;
+            border: 1px solid black;
+            border-right: none;
+        }
+        header>nav>ul>li>a{
+            display: inline-block;
+            padding: 5px 15px;
+        }
+        header>nav>ul>li:first-child{border-radius: 20px 0px 0px 20px;}
+        header>nav>ul>li:last-child{
+            border-right: 1px solid black;
+            border-radius: 0px 20px 20px 0px;
+        }
+        header>nav>ul>li:first-child>a{border-radius: 20px 0px 0px 20px;}
+        header>nav>ul>li:last-child>a{border-radius: 0px 20px 20px 0px;}    
+        header>nav>ul>li:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        header{
+            height: 150px;
+            position: relative;
+        }
+        header>.title{
+            position: absolute;
+            top: 30px;
+
+        }
+        .menu_up{position: absolute; top: 3px; right: 0;}
+        .menu_up>ul>li{font-size: 9pt;}
+        .menu_down{position: absolute; right: 0; bottom: 0;}
+        /* 헤더스타일 끝*/
+
+        /* 섹션스타일 */
+            article,aside,footer{
+            border:1px solid black;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        section{
+            width: 68%;
+            float: left;
+        }
+         /* 섹션스타일 끝*/
+
+        /* 사이드 스타일 */
+        aside{
+            width: 26%;
+            float: right;
+        }
+        aside>ul.side_menu{
+            width: 100%;
+            position: relative;
+        }
+        aside>ul.side_menu>li{
+            width: 49%;
+            display: inline-block;
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px 0;
+        }
+        aside>ul.side_menu>li:hover{
+            background-color: black;
+            color: white;}
+
+        aside>ul.side_menu>li:first-child:hover + aside>div>ul.side_content{ 
+            display: block; 
+            }
+    
+        aside>ul.side_menu>li:last-child:hover + aside>div>ul.side_css{ 
+        display: block; 
+        }
+
+        aside>div>ul.side_content>li{
+            width: 99%;
+            border: 1px solid black;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        aside>div>ul.side_content>li>img{
+            float: left;
+            margin-right: 10px;
+        }
+        aside>div>ul.side_css>li{
+            width: 99%;
+            border: 1px solid black;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        aside>div>ul.side_css>li>img{
+            float: left;
+            margin-right: 10px;
+        }
+        aside>.div{
+            position: relative;
+        }
+        aside>div>ul.side_content{ 
+            position: absolute;
+            margin-top: 0; margin-left: 0;
+            width: 100%;
+        }
+        aside>div>ul.side_css{
+            position: absolute;
+            margin-top: 0; margin-left: 0;
+            width: 100%;
+        }
+
+
+
+
+        /* 사이드 스타일 끝*/
+        footer{
+            text-align: center;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="title">
+                <h1>Rint Development</h1>
+                <h2>HTML5 + CSS3 Basic</h2>
+            </div>
+            <nav class="menu_up">
+                <ul>
+                    <li><a href="#">Web</a></li>
+                    <li><a href="#">mobile</a></li>
+                    <li><a href="#">Game</a></li>
+                    <li><a href="#">Simmulation</a></li>
+                    <li><a href="#">Data</a></li>
+                </ul>
+            </nav>
+
+            <nav class="menu_down">
+                <ul>
+                    <li><a href="#">HTML5</a></li>
+                    <li><a href="#">CSS3</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">jQuery</a></li>
+                    <li><a href="#">node.js</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section>
+            <article>
+                <h3>Main article</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Nemo, quos reprehenderit nam tenetur nesciunt dicta atque 
+                    enim sunt minima ducimus mollitia laudantium? Cumque beatae, 
+                    hic eveniet nostrum dignissimos aperiam aliquam?
+                </p>
+            </article>
+            <article>
+                <h3>Main article</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Nemo, quos reprehenderit nam tenetur nesciunt dicta atque 
+                    enim sunt minima ducimus mollitia laudantium? Cumque beatae, 
+                    hic eveniet nostrum dignissimos aperiam aliquam?
+                </p>
+            </article>
+            <article>
+                <h3>Main article</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Nemo, quos reprehenderit nam tenetur nesciunt dicta atque 
+                    enim sunt minima ducimus mollitia laudantium? Cumque beatae, 
+                    hic eveniet nostrum dignissimos aperiam aliquam?
+                </p>
+            </article>        
+        </section>
+        <aside>
+
+            <ul class="side_menu">
+                <li>HTML</li><li>CSS</li>
+            </ul>
+
+       <div class="div">
+            <ul class="side_content">
+                <li>
+                    <img src="./img/45.png" alt="">
+                    <div>
+                        <p>HTML5 Canvas</p>
+                        <p>2012-03-15</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/45.png" alt="">
+                    <div>
+                        <p>HTML5 Canvas</p>
+                        <p>2012-03-15</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/45.png" alt="">
+                    <div>
+                        <p>HTML5 Canvas</p>
+                        <p>2012-03-15</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/45.png" alt="">
+                    <div>
+                        <p>HTML5 Canvas</p>
+                        <p>2012-03-15</p>
+                    </div>
+                </li>
+            </ul>    
+      
+            <ul class="side_css">
+                <li>
+                    <img src="./img/45.png" alt="">
+                    <div>
+                        <p>CSS Canvas</p>
+                        <p>2012-03-15</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/45.png" alt="">
+                    <div>
+                        <p>CSS Canvas</p>
+                        <p>2012-03-15</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/45.png" alt="">
+                    <div>
+                        <p>CSS Canvas</p>
+                        <p>2012-03-15</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/45.png" alt="">
+                    <div>
+                        <p>CSS Canvas</p>
+                        <p>2012-03-15</p>
+                    </div>
+                </li>
+            </ul>
+        </div>  
+        </aside>
+        <div class="clear"></div>
+        <footer>
+            <h2>HTML5 + CSS3 Basic</h2>
+            <h3>Website Layout Basic</h3>
+        </footer>
+    </div>
+</body>
+</html>
