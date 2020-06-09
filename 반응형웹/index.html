@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- type:어떻게읽는지 ..rel:참조 -->
+    <link href="css/reset.css" type='text/css' rel="stylesheet">
+    <link href="css/style.css" type='text/css' rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b9638de1aa.js" crossorigin="anonymous"></script> 
+    <script src="js/jquery.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+           <!-- 로고를 눌렀을때 홈화면으로 보내기 -->
+            <a href="index.html">JEONG <span>S</span>EHUI</a>
+            <button type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PORTFLIO</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section class="banner">
+        <h1>PORTFLIO</h1>
+        <P>webDesigner Jeong Sehui</P>
+    </section>
+    <section class="work"></section>
+    <section class="portfolio">
+        <h2 class="sub_title">PORTFLIO</h2>
+    </section>
+    <section class="contact">
+        <h2 class="sub_title">Contact</h2>
+        <div class="text">
+        
+        <p>
+            안녕하세요. 정세희입니다.
+        </p>
+        <p>
+            궁금한 사항을 메일로 문의해 주시면 빠른시일내에 답변 드리도록 하겠습니다.
+        </p>
+        <p>
+            감사합니다
+        </p>
+    <ul>
+        <li><a href="#"><i class="fab fa-twitter icon"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram icon"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
+        <li><a href="#"><i class="far fa-envelope icon"></i></a></li>
+    </ul>
+
+    </div>
+    </section>
+    <section class="footer"></section>
+
+
+    <!-- $(); : 제이커리를 사용한다는표시 -->
+    <script>
+        $(function(){
+            $(".logo>button").click(function(){$(".menu").slideToggle();
+        });
+        });
+    </script>
+</body>
+</html>

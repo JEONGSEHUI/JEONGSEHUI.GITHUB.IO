@@ -1,0 +1,121 @@
+@charset "utf-8";
+a{text-decoration: none;}
+
+/* (로고를) 양끝으로 보내는속성 디스플레이를 플렉스로   */
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+/* 로고밑에있는버튼 */
+.logo>a{
+    font-weight: bolder;
+}
+.logo>a>span{
+    color: cornflowerblue;
+}
+.logo>button{
+    display: block;
+    border: none;
+    background: none;
+    opacity: 0.5;
+    cursor: pointer;
+    font-size: 30px;
+}
+/* a태그는 인라인형이라 브록형으로바꿔줘야함 */
+.menu a{
+    display: block;
+    color: black;
+    padding: 15px;
+    font-weight: bolder;
+}
+.menu{
+    display: none;
+}
+/* 배너스타일 */
+
+ /* ../ 는상위폴더에images */
+/* linearGradient : 백그라운드이미지의 그라데이션효과를 넣어줌 (0,0,0)>검정색상의미,마지막0.1은 투명도 */
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)), url('../images/woman-in-the-back-of-a-van-looking-at-mountains-4171211.jpg');
+    background-position: center;
+    background-size: cover;
+    
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* letter-spacing : 글자간격띄울때,너비는 포토샵에서 px재서 1024에서 몇프로 차지하는지확인 */
+.banner h1{
+    color: white;
+    font-size: 10vw;
+    letter-spacing: 0.2em;
+    margin-bottom: 15px;
+}
+.banner p{
+    color: white;
+    
+}
+.sub_title{
+    color: black;
+    font-size: 50px;
+    margin: 50px auto;
+    text-align: center;
+}
+.contact>.text{
+    text-align: center;
+}
+.contact ul{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+.contact .icon{
+    background-color: cadetblue;
+
+    font-size: 20px;
+    border-radius: 50%;
+
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    
+    margin-right: 20px;
+}
+
+
+ 
+@media all and (min-width:768px)
+{
+    .head{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo>button{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .menu>ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .banner h1{
+        font-size: 100px;
+    }
+/* display fkex 는 무조건 부모선택자한테 적용시켜줘야함 */
+}
+
+/* pc 사이즈 */ 
+@media all and (min-width:1024px)
+{  
+    .head{
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
